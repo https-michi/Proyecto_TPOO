@@ -1,0 +1,80 @@
+############################
+# Archivos de compilación
+############################
+target/
+build/
+bin/
+dist/
+out/
+
+############################
+# Archivos de sistema
+############################
+*.class
+*.log
+*.ctxt
+*.tmp
+*.bak
+*.swp
+*~
+*.DS_Store
+Thumbs.db
+
+############################
+# Archivos de IDEs 
+############################
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.settings/
+.project
+.classpath
+
+# NetBeans
+nbproject/private/
+nbbuild/
+nbdist/
+.nb-gradle/
+
+# VS Code
+.vscode/
+
+############################
+# Maven y Gradle
+############################
+# Maven
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+dependency-reduced-pom.xml
+
+# Gradle
+.gradle/
+build/
+
+############################
+# Archivos de pruebas y cobertura
+############################
+test-output/
+surefire-reports/
+jacoco.exec
+coverage/
+
+############################
+# Archivos de seguridad
+############################
+*.env
+*.properties.local
+*.secret
+*.key
+*.pem
+
+############################
+# Docker
+############################
+*.pid
+*.seed
+*.pid.lock
