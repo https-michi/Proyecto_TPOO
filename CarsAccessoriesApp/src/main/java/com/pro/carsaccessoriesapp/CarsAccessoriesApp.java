@@ -1,8 +1,10 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
-
 package com.pro.carsaccessoriesapp;
+
+import com.pro.carsaccessoriesapp.view.LoginFrame;
+import com.pro.carsaccessoriesapp.view.MainFrame;
 
 /**
  *
@@ -11,6 +13,10 @@ package com.pro.carsaccessoriesapp;
 public class CarsAccessoriesApp {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new MainFrame().setVisible(true);
+            }
+        });
     }
 }
