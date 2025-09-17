@@ -4,6 +4,7 @@
 package com.pro.carsaccessoriesapp;
 
 import com.pro.carsaccessoriesapp.ejem.LoginFrame;
+import com.pro.carsaccessoriesapp.ejem.MainFrame;
 
 /**
  *
@@ -14,7 +15,7 @@ public class CarsAccessoriesApp {
     public static void main(String[] args) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new LoginFrame().setVisible(true);
+                new MainFrame().setVisible(true);
             }
         });
     }
