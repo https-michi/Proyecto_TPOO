@@ -3,8 +3,8 @@
  */
 package com.pro.carsaccessoriesapp;
 
-import com.pro.carsaccessoriesapp.ejem.LoginFrame;
-import com.pro.carsaccessoriesapp.ejem.MainFrame;
+import com.pro.carsaccessoriesapp.view.LoginFrame;
+import com.pro.carsaccessoriesapp.view.MainFrame;
 
 /**
  *
