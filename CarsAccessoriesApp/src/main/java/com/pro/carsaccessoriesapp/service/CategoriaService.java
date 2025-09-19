@@ -4,7 +4,7 @@
  */
 package com.pro.carsaccessoriesapp.service;
 
-import com.pro.carsaccessoriesapp.Repositorio.CategoriaDAO;
+import com.pro.carsaccessoriesapp.repositorio.CategoriaDAO;
 import com.pro.carsaccessoriesapp.model.Categoria;
 import java.util.List;
 /**
