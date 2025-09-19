@@ -18,12 +18,13 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author snowden
  */
-public class GestionCategoriaPanel extends javax.swing.JPanel {
+public class GestionCategoriaPanel extends com.pro.carsaccessoriesapp.utils.styles.RoundedPanel {
 
     private DefaultTableModel modelo;
-    private List<Categoria> listaCategorias; // Colección para manejar las categorías
+    private List<Categoria> listaCategorias; 
 
     public GestionCategoriaPanel() {
+        super(30);
         initComponents();
         listaCategorias = new ArrayList<>();
         configurarTabla();
