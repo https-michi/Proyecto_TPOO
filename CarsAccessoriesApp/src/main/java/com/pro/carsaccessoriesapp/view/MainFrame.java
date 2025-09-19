@@ -50,7 +50,7 @@ public class MainFrame extends javax.swing.JFrame {
         btnMaximizarMain.setEnabled(false);
 
         //inicial
-        setContent(new DashboardPanel());
+        setContent(new GestionCategoriaPanel());
 
     }
 
