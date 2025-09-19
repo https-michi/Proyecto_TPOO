@@ -139,7 +139,7 @@ public class GestionCategoriaPanel extends com.pro.carsaccessoriesapp.utils.styl
         label.setText(mensaje);
         label.setForeground(color);
 
-        Timer timer = new Timer(2000, e -> label.setText(""));
+        Timer timer = new Timer(2000, e -> label.setText(" "));
         timer.setRepeats(false);
         timer.start();
     }
@@ -173,21 +173,19 @@ public class GestionCategoriaPanel extends com.pro.carsaccessoriesapp.utils.styl
         panelSalida = panelSalida = new  com.pro.carsaccessoriesapp.utils.styles.RoundedPanel(30);
         lblSalidaMensaje = new javax.swing.JLabel();
 
-        panelContenedor.setBackground(new java.awt.Color(102, 204, 0));
+        panelContenedor.setBackground(new java.awt.Color(35, 35, 43));
 
-        panelFormulario.setBackground(new java.awt.Color(0, 51, 102));
+        panelFormulario.setBackground(new java.awt.Color(62, 64, 76));
 
+        lblNombreCategoria.setForeground(new java.awt.Color(255, 255, 255));
         lblNombreCategoria.setText("NombreCategoria");
 
-        lblValidacionNombre.setText("jLabel2");
+        lblValidacionNombre.setText("_");
 
+        lblDescripcionCategoria.setForeground(new java.awt.Color(255, 255, 255));
         lblDescripcionCategoria.setText("DescripcionCategoria");
 
-        lblValidacionCategoria.setText("jLabel4");
-
-        txtNombreCategoria.setText("jTextField1");
-
-        txtDescripcionCategoria.setText("jTextField2");
+        lblValidacionCategoria.setText("_");
 
         btnRegistrarCategoria.setText("btnRegistrarCategoria");
 
@@ -195,23 +193,24 @@ public class GestionCategoriaPanel extends com.pro.carsaccessoriesapp.utils.styl
 
         btnEliminarCategoria.setText("btnEliminarCategoria");
 
-        jLabel5.setText("jLabel5");
+        jLabel5.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        jLabel5.setText("Registrar Categoria");
 
         javax.swing.GroupLayout panelTituloLayout = new javax.swing.GroupLayout(panelTitulo);
         panelTitulo.setLayout(panelTituloLayout);
         panelTituloLayout.setHorizontalGroup(
             panelTituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelTituloLayout.createSequentialGroup()
-                .addGap(98, 98, 98)
-                .addComponent(jLabel5)
-                .addContainerGap(137, Short.MAX_VALUE))
+                .addGap(23, 23, 23)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(14, Short.MAX_VALUE))
         );
         panelTituloLayout.setVerticalGroup(
             panelTituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelTituloLayout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addComponent(jLabel5)
-                .addContainerGap(49, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout panelFormularioLayout = new javax.swing.GroupLayout(panelFormulario);
@@ -220,9 +219,6 @@ public class GestionCategoriaPanel extends com.pro.carsaccessoriesapp.utils.styl
             panelFormularioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelFormularioLayout.createSequentialGroup()
                 .addGroup(panelFormularioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelFormularioLayout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(panelTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(panelFormularioLayout.createSequentialGroup()
                         .addGap(35, 35, 35)
                         .addGroup(panelFormularioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -235,7 +231,10 @@ public class GestionCategoriaPanel extends com.pro.carsaccessoriesapp.utils.styl
                                 .addComponent(txtDescripcionCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(lblDescripcionCategoria)
                                 .addComponent(txtNombreCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(lblValidacionNombre)))))
+                                .addComponent(lblValidacionNombre))))
+                    .addGroup(panelFormularioLayout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(panelTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(19, Short.MAX_VALUE))
         );
         panelFormularioLayout.setVerticalGroup(
@@ -261,9 +260,11 @@ public class GestionCategoriaPanel extends com.pro.carsaccessoriesapp.utils.styl
                 .addComponent(btnEditarCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnEliminarCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(94, Short.MAX_VALUE))
+                .addContainerGap(102, Short.MAX_VALUE))
         );
 
+        jTable1.setBackground(new java.awt.Color(62, 64, 76));
+        jTable1.setForeground(new java.awt.Color(255, 255, 255));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -281,12 +282,16 @@ public class GestionCategoriaPanel extends com.pro.carsaccessoriesapp.utils.styl
         panelListaTabla.setLayout(panelListaTablaLayout);
         panelListaTablaLayout.setHorizontalGroup(
             panelListaTablaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 654, Short.MAX_VALUE)
+            .addComponent(jScrollPane1)
         );
         panelListaTablaLayout.setVerticalGroup(
             panelListaTablaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 460, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(panelListaTablaLayout.createSequentialGroup()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 460, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
+
+        panelBusqueda.setBackground(new java.awt.Color(62, 64, 76));
 
         javax.swing.GroupLayout panelBusquedaLayout = new javax.swing.GroupLayout(panelBusqueda);
         panelBusqueda.setLayout(panelBusquedaLayout);
@@ -299,7 +304,10 @@ public class GestionCategoriaPanel extends com.pro.carsaccessoriesapp.utils.styl
             .addGap(0, 67, Short.MAX_VALUE)
         );
 
-        lblSalidaMensaje.setText("jLabel1");
+        panelSalida.setBackground(new java.awt.Color(62, 64, 76));
+
+        lblSalidaMensaje.setFont(new java.awt.Font("Consolas", 1, 14)); // NOI18N
+        lblSalidaMensaje.setText("_");
 
         javax.swing.GroupLayout panelSalidaLayout = new javax.swing.GroupLayout(panelSalida);
         panelSalida.setLayout(panelSalidaLayout);
@@ -307,15 +315,15 @@ public class GestionCategoriaPanel extends com.pro.carsaccessoriesapp.utils.styl
             panelSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelSalidaLayout.createSequentialGroup()
                 .addGap(43, 43, 43)
-                .addComponent(lblSalidaMensaje)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(lblSalidaMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(116, Short.MAX_VALUE))
         );
         panelSalidaLayout.setVerticalGroup(
             panelSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelSalidaLayout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(lblSalidaMensaje)
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(lblSalidaMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout panelContenedorLayout = new javax.swing.GroupLayout(panelContenedor);
@@ -323,28 +331,28 @@ public class GestionCategoriaPanel extends com.pro.carsaccessoriesapp.utils.styl
         panelContenedorLayout.setHorizontalGroup(
             panelContenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelContenedorLayout.createSequentialGroup()
-                .addGap(29, 29, 29)
+                .addGap(25, 25, 25)
                 .addComponent(panelFormulario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
-                .addGroup(panelContenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGap(18, 18, 18)
+                .addGroup(panelContenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(panelListaTabla, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(panelBusqueda, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(panelSalida, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addGap(24, 24, 24))
         );
         panelContenedorLayout.setVerticalGroup(
             panelContenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelContenedorLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(panelContenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelContenedorLayout.createSequentialGroup()
+                .addContainerGap(23, Short.MAX_VALUE)
+                .addGroup(panelContenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelContenedorLayout.createSequentialGroup()
                         .addComponent(panelBusqueda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addGap(28, 28, 28)
                         .addComponent(panelListaTabla, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(29, 29, 29)
                         .addComponent(panelSalida, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(panelFormulario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(41, Short.MAX_VALUE))
+                .addGap(24, 24, 24))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -355,7 +363,7 @@ public class GestionCategoriaPanel extends com.pro.carsaccessoriesapp.utils.styl
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelContenedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(panelContenedor, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
